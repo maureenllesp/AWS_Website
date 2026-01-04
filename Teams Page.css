@@ -78,6 +78,7 @@ nav {
     align-items: center;
     justify-content: center;
     display: flex;
+    transform: translateY(-50px);
 }
 
 .teamsBanners {
@@ -91,13 +92,22 @@ nav {
     align-items: center;
     justify-content: center;
     display: flex;
+    transform: translateY(-50px);
+    z-index: 20;
 }
 
 .teamsNav {
     color: #B82C85;
     width: 50%;
+    z-index: 900;
 }
 
 .members_Icons {
     /* height: 200px; */
+}
+
+.eventDisplay {
+    background-color: #B82C85;
+    height: 250px;
+    border-radius: 30px;
 }
