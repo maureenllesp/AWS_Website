@@ -5,9 +5,6 @@
     font-style: normal;
 }
 
-:root {
-    --teams-banner: url('assets/placeholderPhoto.jpg');
-}
 
 body {
     background-color: rgb(255, 255, 255);
@@ -67,52 +64,14 @@ nav {
     font-weight: bold;
 }
 
-/*body*/
+/* body */
 
-.teamsPhoto {
+.eventsHeaderBanner {
     background-image: url(assets/placeholderPhoto.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    width: 95%;
-    margin-top: 12px;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    transform: translateY(-50px);
-}
-
-.teamsNav {
-    display: flex; 
-    position: relative;  
-    color: #B82C85;
-    width: 50%;
-    z-index: 100;
-}
-
-.teamsNavItems {
-    font-weight: 400;
-    transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out;
-}
-
-.teamsNavItems:hover {
-    transform: translateY(-2px);
-    cursor: pointer;
-}
-
-.teamsNavItems.active {
-    font-weight: 700;
-    color: #B82C85;
-}
-
-.teamsBanners {
-    background-image: var(--teams-banner);
-    background-size: cover;
-    background-position: center;
     height: 35vh;
-    width: 80%;
+    width: 85%;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     align-items: center;
@@ -122,10 +81,11 @@ nav {
     z-index: 20;
 }
 
-.members_Icons:hover {
-    transform: translateY(-10px);
-    transition: all 0.3s ease-in-out; 
-    cursor: pointer;
+.eventDisplay {
+    background-color: #B82C85;
+    height: 250px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* footer */
@@ -151,17 +111,15 @@ footer {
         font-size: 28px;
     }
 
-    h1 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-family: 'Brasika', sans-serif;
         color: #7583F1;
         font-size: 56px;
-        font-weight: bold;
-    }
-
-    h3 {
-        font-family: 'Brasika', sans-serif;
-        color: #7583F1;
-        font-size: 30px;
         font-weight: bold;
     }
 
@@ -193,17 +151,15 @@ footer {
         font-size: 32px;
     }
 
-    h1 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-family: 'Brasika', sans-serif;
         color: #7583F1;
-        font-size: 56px;
-        font-weight: bold;
-    }
-
-    h3 {
-        font-family: 'Brasika', sans-serif;
-        color: #7583F1;
-        font-size: 35px;
+        font-size: 58px;
         font-weight: bold;
     }
 
