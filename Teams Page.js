@@ -3,33 +3,46 @@ const teamData = {
     'Executives': {
         banner: "url('assets/placeholderPhoto2.jpg')",
         members: [['Kelcey Cruz', 'Chief Executive Officer', "url('assets/placeholderPhoto2.jpg')"], 
-        ['Angela Samboa', 'Vice President', "url('assets/placeholderPhoto2.jpg')"]]
+        ['Angela Samboa', 'Vice President', "url('assets/placeholderPhoto2.jpg')"],
+        ['Dave Matthew Punsalan', 'Secretary', "url('assets/placeholderPhoto.jpg')"],
+        ['Joshua Tumamao', 'Chief Finance Officer', "url('assets/placeholderPhoto3.jpg')"]]
     },
     'Operations': {
         banner: "url('assets/about-banner.jpg')",
-        members: []
+        members: [['Bien Carlo Grafil', 'Chief Operations Officer', "url('assets/placeholderPhoto.jpg')"],
+        ['Gabriel John Solomon', 'Vice-Chief Operations Officer', "url('assets/placeholderPhoto2.jpg')"],
+        ['Gwen Lopez', 'Secretary of Operations Officer', "url('assets/placeholderPhoto3.jpg')"]]
     },
     'Marketing': {
         banner: "url('assets/services-banner.jpg')",
-        members: []
+        members: [['Bianca Elaine Adame', 'Chief Marketing Officer', "url('assets/placeholderPhoto3.jpg')"],
+        ['Watson Dongon', 'Vice-Chief Marketing Officer', "url('assets/placeholderPhoto.jpg')"],]
     },
     'Creatives': {
         banner: "url('assets/contact-banner.jpg')",
-        members: []
+        members: [['Jahzeel Agustin', 'Chief Creatives Officer', "url('assets/placeholderPhoto.jpg')"],
+        ['Alyssa Santillan', 'Vice-Chief Creatives Officer', "url('assets/placeholderPhoto2.jpg')"],
+        ['Lorenzo Gloria', 'Committee', "url('assets/placeholderPhoto3.jpg')"],
+        ['Sairus Talavera', 'Committee', "url('assets/placeholderPhoto.jpg')"],
+        ['Janessa Manuel', 'Committee', "url('assets/placeholderPhoto2.jpg')"]]
     },
     'Communications': {
         banner: "url('assets/contact-banner.jpg')",
-        members: []
+        members: [['Kyle Sy', 'Chief Communications Officer', "url('assets/placeholderPhoto2.jpg')"], 
+        ['Nicole Lim', 'Committee', "url('assets/placeholderPhoto3.jpg')"]]
     },
     'Relations': {
         banner: "url('assets/contact-banner.jpg')",
-        members: []
+        members: [['Dale Wilson Espirityo', 'Chief Relations Officer', "url('assets/placeholderPhoto.jpg')"],
+        ['Chang Park', 'Vice-Chief Relations Officer', "url('assets/placeholderPhoto2.jpg')"],]
     },
     'Technology': {
         banner: "url('assets/placeholderPhoto.jpg')",
         members: [['Maureen Espinosa', 'Chief Technology Officer', "url('assets/placeholderPhoto3.jpg')"], 
         ['Nichole Velasquez', 'Committee', "url('assets/placeholderPhoto2.jpg')"], 
-        ['Kier Pascua', 'Committee', "url('assets/placeholderPhoto.jpg')"]]
+        ['Kier Pascua', 'Committee', "url('assets/placeholderPhoto.jpg')"],
+        ['Alfred Anaud', 'Committee', "url('assets/placeholderPhoto3.jpg')"],
+        ['Enzo Azuelo', 'Committee', "url('assets/placeholderPhoto2.jpg')"]]
     }
 };
 
@@ -38,8 +51,8 @@ function teamBannerChange(teamTab, clickedElement) {
     if (!team) return;
     
     // Remove active class from all nav items
-    document.querySelectorAll('.teamsNavItems').forEach(item => {
-        item.classList.remove('active');
+        document.querySelectorAll('.teamsNavItems').forEach(item => {
+            item.classList.remove('active');
     });
     
     // Add active class to clicked item
