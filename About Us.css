@@ -5,6 +5,29 @@
     font-style: normal;
 }
 
+ h1, h2, h3, h4, h5,h6 {
+    font-family: 'Brasika', sans-serif;
+    color: #7583F1;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+hr{
+    width: 25%; 
+    height: 4px; 
+    border: none; 
+    border-top: 3px solid #7583F1; 
+    opacity: 1; margin: 4px 0 10px 0;
+}
+
+p{
+    font-size: 1rem; 
+    text-align: center;
+}
+.p-right{
+    text-align: right;
+}
+/* body*/
 body {
     background-color: rgb(255, 255, 255);
     margin: 0;
@@ -12,6 +35,12 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Navigation Bar */
+nav{
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
 .joinUs {
     background-color: #F8E4B6;
     width: 120px;
@@ -32,6 +61,7 @@ body {
     text-align: center;
 }
 
+/* About Us Hero Section */
 .hero {
     position: relative;
     min-height: 600px;
@@ -86,17 +116,7 @@ body {
 
 @media (max-width: 992px) {
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: 'Brasika', sans-serif;
-        color: #7583F1;
-        font-size: 56px;
-        font-weight: bold;
-    }
+   
 
     .hero {
         display: block;
