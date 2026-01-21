@@ -1,26 +1,26 @@
 @font-face {
-    font-family: 'Brasika';
-    src: url('assets/brasika.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: "Brasika";
+	src: url("assets/brasika.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 :root {
-    --teams-banner: url('assets/placeholderPhoto.jpg');
+	--teams-banner: url("assets/placeholderPhoto.jpg");
 }
 
 body {
-    background-color: rgb(255, 255, 255);
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+	background-color: rgb(255, 255, 255);
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
 }
 
 nav {
     top: 0;
     background-color: #ffffff;
     width: 60%;
-    height: 70px;
+    min-height: 70px;
     margin: 0 auto;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     border-radius: 50px;
@@ -51,177 +51,138 @@ nav {
     color: black;
 }
 
-.joinUs{
-    background-color: #F8E4B6;
-    max-width: none;
-    width: 120px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-left: 20px;
-    width: 120px;
-    border-radius: 50px;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
+.joinUs {
+	background-color: #f8e4b6;
+	max-width: none;
+	width: 120px;
+	height: 40px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-left: 20px;
+	width: 120px;
+	border-radius: 50px;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.navbar-toggler {
+	border: none;
 }
 
 /*body*/
 
 .teamsPhoto {
-    background-image: url(assets/placeholderPhoto.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 95%;
-    margin-top: 12px;
-    border-radius: 25px;
-    box-shadow: inset 0 0 10px rgba(0, 0, 10, 0.5);
-    align-items: center;
-    justify-content: center;
-    display: flex;
+	background-image: url(assets/placeholderPhoto.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: 95%;
+	margin-top: 12px;
+	border-radius: 25px;
+	box-shadow: inset 0 0 10px rgba(0, 0, 10, 0.5);
+	align-items: center;
+	justify-content: center;
+	display: flex;
 }
 
 .teamsNav {
-    display: flex; 
-    position: relative;  
-    color: #B82C85;
-    width: 50%;
-    z-index: 100;
+	display: flex;
+	position: relative;
+	color: #b82c85;
+	width: 50%;
+	z-index: 100;
 }
 
 .teamsNavItems {
-    font-weight: 400;
-    transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+	font-weight: 400;
+	transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out;
 }
 
 .teamsNavItems:hover {
-    transform: translateY(-2px);
-    cursor: pointer;
+	transform: translateY(-2px);
+	cursor: pointer;
 }
 
 .teamsNavItems.active {
-    font-weight: 700;
-    color: #B82C85;
+	font-weight: 700;
+	color: #b82c85;
 }
 
 .teamsBanners {
-    background-image: var(--teams-banner);
-    background-size: cover;
-    background-position: center;
-    height: 35vh;
-    width: 80%;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    z-index: 20;
+	background-image: var(--teams-banner);
+	background-size: cover;
+	background-position: center;
+	height: 35vh;
+	width: 80%;
+	border-radius: 25px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	z-index: 20;
 }
 
 .members_Icons:hover {
-    transform: translateY(-10px);
-    transition: all 0.3s ease-in-out; 
-    cursor: pointer;
+	transform: translateY(-10px);
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
 }
 
 /* footer */
 
 footer {
-    background-color: #7583F1;
-    max-height: none;
-    height: 200px;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Brasika', sans-serif;
-    color: #333333;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+	background-color: #7583f1;
+	max-height: none;
+	height: 200px;
+	padding: 20px;
+	text-align: center;
+	font-family: "Brasika", sans-serif;
+	color: #333333;
+	position: relative;
+	bottom: 0;
+	width: 100%;
 }
 
 /* responsiveness */
 
-@media (min-width: 1440px) {
+@media (min-width: 600px) {
+	.banner-text {
+		font-size: 28px;
+	}
 
-    .banner-text {
-        font-size: 28px;
-    }
+	h1 {
+		font-family: "Brasika", sans-serif;
+		color: #7583f1;
+		font-size: 56px;
+		font-weight: bold;
+	}
 
-    h1 {
-        font-family: 'Brasika', sans-serif;
-        color: #7583F1;
-        font-size: 56px;
-        font-weight: bold;
-    }
+	h3 {
+		font-family: "Brasika", sans-serif;
+		color: #7583f1;
+		font-size: 30px;
+		font-weight: bold;
+	}
 
-    h3 {
-        font-family: 'Brasika', sans-serif;
-        color: #7583F1;
-        font-size: 30px;
-        font-weight: bold;
-    }
+	.imageResize {
+		scale: 1.2;
+		margin-top: 20px;
+	}
 
-    .imageResize {
-        scale: 1.2;
-        margin-top: 20px;
-    }
+	.section {
+		width: 800px;
+		height: 350px;
+		font-size: 28px;
+	}
 
-    .section {
-        width: 800px;
-        height: 350px;
-        font-size: 28px;
-    }
+	.sectionImage {
+		width: 450px;
+		height: 450px;
+	}
 
-    .sectionImage {
-        width: 450px;
-        height: 450px;
-    }
-
-    .fade-row {
-        margin-bottom: 120px;
-    }
-}
-
-
-@media (min-width: 1600px) {
-
-    .banner-text {
-        font-size: 32px;
-    }
-
-    h1 {
-        font-family: 'Brasika', sans-serif;
-        color: #7583F1;
-        font-size: 56px;
-        font-weight: bold;
-    }
-
-    h3 {
-        font-family: 'Brasika', sans-serif;
-        color: #7583F1;
-        font-size: 35px;
-        font-weight: bold;
-    }
-
-    .imageResize {
-        scale: 1.3;
-        margin-top: 18px;
-    }
-
-    .section {
-        width: 800px;
-        height: 350px;
-        font-size: 28px;
-    }
-
-    .sectionImage {
-        width: 450px;
-        height: 450px;
-    }
-
-    .fade-row {
-        margin-bottom: 120px;
-    }
+	.fade-row {
+		margin-bottom: 120px;
+	}
 }
