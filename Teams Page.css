@@ -5,6 +5,8 @@
 	font-style: normal;
 }
 
+
+
 :root {
 	--teams-banner: url("assets/placeholderPhoto.jpg");
 }
@@ -14,10 +16,23 @@ body {
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
+	
+	overflow-x: hidden;
+    animation: body_load 1s ease-in-out forwards;
+}
+
+@keyframes body_load {
+	0% {
+		opacity: 0;
+	}
+
+	90%, 100% {
+		opacity: 1;
+	}
 }
 
 nav {
-    top: 0;
+    top: 20px;
     background-color: #ffffff;
     width: 60%;
     min-height: 70px;
@@ -31,6 +46,8 @@ nav {
     padding: 10px 20px;
     font-family:  sans-serif;
     z-index: 1000;
+	transition: none !important;
+	animation: none !important;
 }
 
 .main_Nav {
@@ -91,13 +108,14 @@ nav {
 	display: flex;
 	position: relative;
 	color: #b82c85;
-	width: 50%;
+	width: 55%;
 	z-index: 100;
 }
 
 .teamsNavItems {
 	font-weight: 400;
 	transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+	color: #b82c85;
 }
 
 .teamsNavItems:hover {

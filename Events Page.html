@@ -14,56 +14,30 @@
 	</head>
 
 	<body>
-		<nav class="shadow navbar navbar-expand-lg bg-body-tertiary mx-3 rounded-5">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="Main Page.html">
-					<img
-						src="/docs/5.3/assets/brand/bootstrap-logo.svg"
-						alt="Logo"
-						width="30"
-						height="24"
-						class="d-inline-block align-text-top"
-					/>
-				</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarNav"
-					aria-controls="navbarNav"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a
-								class="nav-link active"
-								aria-current="page"
-								href="About Us.html"
-								>About Us</a
-							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="Teams Page.html">Teams</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="Events Page.html">Events</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="Products Page.html">Products</a>
-						</li>
-						<li
-							class="nav-item joinUs justify-content-between align-items-center m-0 p-0"
-						>
-							<a href="#">Join Us!</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+		<nav class="p-3 mt-4 navbar navbar-expand-lg d-flex justify-content-between align-items-center main_Nav">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="mainPage.html"><img src="assets/" alt="Logo"></a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse flex-grow-0 align-items-end" id="navbarNav">
+                <ul class="d-flex justify-content-between align-items-center m-0 p-0 navbar-nav nav-list">
+                    <li class="nav-item"><a href="About Us.html">About Us</a></li>
+                    <li class="nav-item"><a href="Teams Page.html">Teams</a></li>
+                    <li class="nav-item"><a href="Events Page.html">Events</a></li>
+                    <li class="nav-item"><a href="Products Page.html">Products</a></li>
+                    <li class="nav-item joinUs justify-content-between align-items-center pt-2 p-0 button">
+                        Join Us!
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
 
 		<div
 			class="container-fluid mt-3 d-flex align-items-center justify-content-center"

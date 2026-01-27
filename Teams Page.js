@@ -1,3 +1,9 @@
+window.onload = function () {
+    setTimeout(()=>{
+        window.scrollTo(0, 0);
+    }, 200)
+}
+
 // Team data mapping
 const teamData = {
     'Executives': {
@@ -76,10 +82,10 @@ function teamMemberChange(members) {
     container.innerHTML = '';
     members.forEach(([name, role, memberPhoto]) => {
         const memberDiv = document.createElement('div');
-        memberDiv.className = 'col-3 members_Icons';
+        memberDiv.className = 'col-lg-3 col-sm-12 members_Icons';
         memberDiv.innerHTML = `
             <center>
-                <img src="assets/MemberIconPlaceholder.png" width="30%">
+                <img src="assets/MemberIconPlaceholder.png" width="100px">
                 <hr width="50px" height="2px">
                 <h3>${name}</h3>
                 <p>${role}</p>
