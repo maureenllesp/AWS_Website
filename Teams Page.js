@@ -75,6 +75,23 @@ function teamBannerChange(teamTab, clickedElement) {
     }
 }
 
+const animate_elements = document.querySelectorAll('.animate_on_scroll');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+        }
+    })
+}, {
+    threshold: 0.2,
+});
+
+for (let i = 0; i < animate_elements.length; i++) {
+    const  e1 = animate_elements[i];
+    observer.observe(e1);
+}
+
 function teamMemberChange(members) {
     const container = document.querySelector('#teamMembers .container-sm');
     if (!container) return;
@@ -82,7 +99,7 @@ function teamMemberChange(members) {
     container.innerHTML = '';
     members.forEach(([name, role, memberPhoto]) => {
         const memberDiv = document.createElement('div');
-        memberDiv.className = 'col-lg-3 col-sm-12 members_Icons';
+        memberDiv.className = 'col-lg-3 col-sm-12 members_Icons animate_on_scroll';
         memberDiv.innerHTML = `
             <center>
                 <img src="assets/MemberIconPlaceholder.png" width="100px">
@@ -99,6 +116,8 @@ function teamMemberChange(members) {
         });
 
         container.appendChild(memberDiv);
+        observer.observe(memberDiv);
+
     });
 }
 
