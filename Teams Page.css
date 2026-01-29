@@ -32,9 +32,8 @@ body {
 }
 
 nav {
-    top: 0;
     background-color: #ffffff;
-	top: 15px;
+	top: 25px;
     width: 60%;
     min-height: 70px;
     margin: 0 auto;
