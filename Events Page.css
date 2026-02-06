@@ -16,7 +16,7 @@ body {
 	scroll-behavior: smooth;
 }
 
-nav {
+/* nav {
     top: 0;
     background-color: #ffffff;
 	top: 15px;
@@ -70,7 +70,7 @@ nav {
 
 .navbar-toggler {
 	border: none;
-}
+} */
 
 /* body */
 
