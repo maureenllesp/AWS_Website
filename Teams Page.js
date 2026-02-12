@@ -1,3 +1,9 @@
+window.onload = function () {
+    setTimeout(()=>{
+        window.scrollTo(0, 0);
+    }, 200)
+}
+
 // Team data mapping
 const teamData = {
     'Executives': {
@@ -69,6 +75,23 @@ function teamBannerChange(teamTab, clickedElement) {
     }
 }
 
+const animate_elements = document.querySelectorAll('.animate_on_scroll');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+        }
+    })
+}, {
+    threshold: 0.2,
+});
+
+for (let i = 0; i < animate_elements.length; i++) {
+    const  e1 = animate_elements[i];
+    observer.observe(e1);
+}
+
 function teamMemberChange(members) {
     const container = document.querySelector('#teamMembers .container-sm');
     if (!container) return;
@@ -76,10 +99,10 @@ function teamMemberChange(members) {
     container.innerHTML = '';
     members.forEach(([name, role, memberPhoto]) => {
         const memberDiv = document.createElement('div');
-        memberDiv.className = 'col-3 members_Icons';
+        memberDiv.className = 'col-lg-3 col-sm-12 members_Icons animate_on_scroll';
         memberDiv.innerHTML = `
             <center>
-                <img src="assets/MemberIconPlaceholder.png" width="30%">
+                <img src="assets/MemberIconPlaceholder.png" width="100px">
                 <hr width="50px" height="2px">
                 <h3>${name}</h3>
                 <p>${role}</p>
@@ -93,6 +116,8 @@ function teamMemberChange(members) {
         });
 
         container.appendChild(memberDiv);
+        observer.observe(memberDiv);
+
     });
 }
 

@@ -8,64 +8,66 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="Teams Page.css">
-    <script src="Teams Page.js"></script>
-
 </head>
 
 <body>
-    <nav class="mt-4 main_Nav">
-        <div class="container-fluid nav-bar">
-            <div class="row">
-                <div class="col-12 d-flex justify-content-between align-items-center">
-                    <!-- LOGO (LEFT) -->
-                    <div class="logo">
-                        <img src="assets/" alt="Logo">
-                    </div>
+    <nav class="p-3 mt-4 navbar navbar-expand-lg d-flex justify-content-between align-items-center main_Nav">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="mainPage.html"><img src="assets/" alt="Logo"></a>
+            </div>
 
-                    <!-- NAV BUTTONS (RIGHT) -->
-                    <ul class="nav-list d-flex justify-content-between align-items-center m-0 p-0">
-                        <li class="nav-item"><a href="About Us.html">About Us</a></li>
-                        <li class="nav-item"><a href="Teams Page.html">Teams</a></li>
-                        <li class="nav-item"><a href="Events Page.html">Events</a></li>
-                        <li class="nav-item"><a href="Products Page.html">Products</a></li>
-                        <li class="nav-item joinUs justify-content-between align-items-center pt-2 p-0 button" style="width: 180px; ">
-                            Join Us!
-                        </li>
-                    </ul>
-                </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse flex-grow-0 align-items-end" id="navbarNav">
+                <ul class="d-flex justify-content-between align-items-center m-0 p-0 navbar-nav nav-list">
+                    <li class="nav-item"><a href="About Us.html">About Us</a></li>
+                    <li class="nav-item"><a href="Teams Page.html">Teams</a></li>
+                    <li class="nav-item"><a href="Events Page.html">Events</a></li>
+                    <li class="nav-item"><a href="Products Page.html">Products</a></li>
+                    <li class="nav-item joinUs justify-content-between align-items-center pt-2 p-0 button">
+                        Join Us!
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
+
 
     <div class="container-fluid teamsPhoto" >
 
     </div>
 
-    <nav class="mt-4 teamsNav">
-        <div class="container-fluid nav-bar">
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center align-items-center ">
-                    <ul class="nav-list d-flex justify-content-between align-items-center m-0 p-0">
-                        <li class="nav-item teamsNavItems" onclick="teamBannerChange('Executives')">Executives</a></li>
-                        <li class="nav-item teamsNavItems" onclick="teamBannerChange('Operations')">Operations</a></li>
-                        <li class="nav-item teamsNavItems" onclick="teamBannerChange('Marketing')">Marketing</a></li>
-                        <li class="nav-item teamsNavItems" onclick="teamBannerChange('Creatives')">Creatives</a></li>
-                        <li class="nav-item teamsNavItems" onclick="teamBannerChange('Communications')">Communications</a></li>
-                        <li class="nav-item teamsNavItems" onclick="teamBannerChange('Relations')">Relations</a></li>
-                        <li class="nav-item teamsNavItems" onclick="teamBannerChange('Technology')">Technology</a></li>
-                    </ul>
-                </div>
+    <nav class="p-3 mt-4 mb-5 navbar navbar-expand-xxl d-flex justify-content-between align-items-center teamsNav animate_on_scroll">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTeam" aria-controls="navbarTeam" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="teamsNavItems">COMMITTEES ▾</span>
+            </button>
+            
+            <div class="collapse navbar-collapse flex-grow-0 align-items-start" id="navbarTeam">
+                <ul class="d-flex justify-content-between align-items-center m-0 p-0 navbar-nav nav-list">
+                    <li class="nav-item teamsNavItems" onclick="teamBannerChange('Executives')">Executives</a></li>
+                    <li class="nav-item teamsNavItems" onclick="teamBannerChange('Operations')">Operations</a></li>
+                    <li class="nav-item teamsNavItems" onclick="teamBannerChange('Marketing')">Marketing</a></li>
+                    <li class="nav-item teamsNavItems" onclick="teamBannerChange('Creatives')">Creatives</a></li>
+                    <li class="nav-item teamsNavItems" onclick="teamBannerChange('Communications')">Communications</a></li>
+                    <li class="nav-item teamsNavItems" onclick="teamBannerChange('Relations')">Relations</a></li>
+                    <li class="nav-item teamsNavItems" onclick="teamBannerChange('Technology')">Technology</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container-fluid mt-3 d-flex align-items-center justify-content-center" style="z-index: 20;">
+    <div class="container-fluid mt-3 d-flex align-items-center justify-content-center animate_on_scroll" style="z-index: 20;">
         <div class="container-fluid teamsBanners" >
 
         </div>
     </div>
 
-    <div class="container-fluid d-flex align-items-center justify-content-center" id="teamMembers">
+    <div class="container-fluid d-flex align-items-center justify-content-center animate_on_scroll" id="teamMembers">
         <div class="container-sm row m-5 p-2 d-flex align-items-center justify-content-center">
         </div>
     </div>
@@ -83,6 +85,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="Teams Page.js"></script>
     <script>
         // Attach event listeners to nav items
         document.querySelectorAll('.teamsNavItems').forEach(item => {
