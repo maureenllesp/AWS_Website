@@ -29,6 +29,7 @@ const teamData = {
         members: [['Jahzeel Agustin', 'Chief Creatives Officer', "url('assets/placeholderPhoto.jpg')"],
         ['Alyssa Santillan', 'Vice-Chief Creatives Officer', "url('assets/placeholderPhoto2.jpg')"],
         ['Lorenzo Gloria', 'Committee', "url('assets/placeholderPhoto3.jpg')"],
+        ['Yufa Villasor', 'Committee', "url('assets/placeholderPhoto3.jpg')"],
         ['Sairus Talavera', 'Committee', "url('assets/placeholderPhoto.jpg')"],
         ['Janessa Manuel', 'Committee', "url('assets/placeholderPhoto2.jpg')"]]
     },
@@ -55,21 +56,25 @@ const teamData = {
 function teamBannerChange(teamTab, clickedElement) {
     const team = teamData[teamTab];
     if (!team) return;
-    
-    // Remove active class from all nav items
-        document.querySelectorAll('.teamsNavItems').forEach(item => {
-            item.classList.remove('active');
+
+    document.querySelectorAll('.teamsNavItems').forEach(item => {
+        item.classList.remove('active');
     });
-    
-    // Add active class to clicked item
+
     if (clickedElement) {
         clickedElement.classList.add('active');
     }
-    
-    // Update banner
-    document.documentElement.style.setProperty('--teams-banner', team.banner);
-    
-    // Update members
+
+    const bannerContainer = document.querySelector('.teamsBanners');
+    bannerContainer.style.transition = "opacity 0.5s ease-in-out";
+    bannerContainer.style.opacity = 0;
+
+    setTimeout(() => {
+        document.documentElement.style.setProperty('--teams-banner', team.banner);
+
+        bannerContainer.style.opacity = 1;
+    }, 500); 
+
     if (team.members.length > 0) {
         teamMemberChange(team.members);
     }
@@ -110,9 +115,18 @@ function teamMemberChange(members) {
         `;
 
         memberDiv.addEventListener('click', function() {
-            if (memberPhoto) {
+            if (!memberPhoto) return;
+
+            const bannerContainer = document.querySelector('.teamsBanners');
+            if (!bannerContainer) return;
+
+            bannerContainer.style.transition = "opacity 0.5s ease-in-out";
+            bannerContainer.style.opacity = 0;
+
+            setTimeout(() => {
                 document.documentElement.style.setProperty('--teams-banner', memberPhoto);
-            }
+                bannerContainer.style.opacity = 1;
+            }, 500);
         });
 
         container.appendChild(memberDiv);
