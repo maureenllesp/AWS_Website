@@ -11,11 +11,24 @@
 </head>
 
 <body>
-    <!-- SPLASH SCREEN -->
-    <div>
-        <span class="splash"></span>
-        <span class="splashlogo"></span>
-    </div>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg custom-navbar mb-4" style="background:#2F3AA8;">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="#"><img src="../website/ASSETS/logo.png" alt=""
+                    style="height: 60px; width: 60px;"></a>
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link active" href="aboutUs.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teams.html">Teams</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                </ul>
+            </div>
+            <a href="#" class="nav-link join-btn">Join Us!</a>
+        </div>
+    </nav>
 
     <!-- HERO SECTION -->
     <div class="container-fluid banner">
@@ -24,7 +37,7 @@
                 <div class="col-md-7">
                     <div class="container-fluid banner-text">
                         <h1>Hello There!</h1>
-                        <hr class="Titleline">
+                        <hr class="Titleline" style="width: 170px; border-width: 3px; color: #7583F1;">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -36,38 +49,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <img src="assets/lottie.png" alt="placeholder image" class="img-fluid banner-image imageResize">
+                <div class="col-md-5 circleImage">
+
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- WAVE ANIMATION -->
+    <div class="wave-container">
+        <svg viewBox="0 0 1440 400" preserveAspectRatio="none">
+
+            <path class="wave wave1"
+                d="M0,250L80,230C160,210,320,170,480,170C640,170,800,210,960,220C1120,230,1280,210,1360,200L1440,190V400H0Z">
+            </path>
+
+            <path class="wave wave2"
+                d="M0,280L80,260C160,240,320,200,480,200C640,200,800,240,960,260C1120,280,1280,260,1360,240L1440,220V400H0Z">
+            </path>
+
+            <path class="wave wave3"
+                d="M0,310L80,290C160,270,320,230,480,230C640,230,800,270,960,290C1120,310,1280,290,1360,270L1440,250V400H0Z">
+            </path>
+
+        </svg>
+    </div>
+
+
     <!-- NAVIGATION BAR -->
-    <nav>
-        <div class="container-fluid nav-bar">
-            <div class="row">
-                <div class="col-12 d-flex justify-content-between align-items-center">
 
-                    <!-- LOGO (LEFT) -->
-                    <div class="logo">
-                        <img src="assets/" alt="Logo">
-                    </div>
-
-                    <!-- NAV BUTTONS (RIGHT) -->
-                    <ul class="nav-list d-flex justify-content-between align-items-center m-0 p-0">
-                        <li class="nav-item"><a href="About Us.html">About Us</a></li>
-                        <li class="nav-item"><a href="Teams Page.html">Teams</a></li>
-                        <li class="nav-item"><a href="Events Page.html">Events</a></li>
-                        <li class="nav-item"><a href="Products Page.html">Products</a></li>
-                        <li class="nav-item joinUs justify-content-between align-items-center m-0 p-0"><a href="#">Join
-                                Us!</a></li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-    </nav>
 
     <!-- MAIN CONTENT -->
 
