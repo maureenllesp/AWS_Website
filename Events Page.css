@@ -128,12 +128,6 @@ svg {
 	background-color: #E9DDF8;
 }
 
-.eventPhoto {
-	height: 100%;
-	width: 100%;
-	background-repeat: no-repeat;
-}
-
 .eventDesc {
 	color: #5B2D91;
 	font-size: large;
@@ -143,6 +137,18 @@ svg {
 .eventTitle {
 	color: #5B2D91;
 	font-size: x-large;
+}
+
+.animate_on_scroll {
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all 0.8s ease-out;
+	/* transition-delay: 0.4s; */
+}
+
+.animate {
+	opacity: 1;
+	transform: translateY(0);
 }
 
 /* footer */
