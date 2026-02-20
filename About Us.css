@@ -35,31 +35,6 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Navigation Bar */
-nav{
-    margin-top: 1rem;
-    margin-right: auto;
-    margin-left: auto;
-}
-.joinUs {
-    background-color: #F8E4B6;
-    width: 120px;
-    height: 40px;
-    display: flex;              
-    align-items: center;        
-    justify-content: center;    
-    border-radius: 50px;
-    margin-left: 20px;
-}
-
-.joinUs a {
-    color: black;
-    text-decoration: none; 
-    font-weight: bold;
-    display: block; 
-    width: 100%;
-    text-align: center;
-}
 
 /* About Us Hero Section */
 .hero {

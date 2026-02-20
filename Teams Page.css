@@ -32,7 +32,7 @@ body {
 }
 
 nav {
-    background-color: #ffffff;
+    background-color: #5C4630;
 	top: 25px;
     width: 60%;
     min-height: 70px;
@@ -63,13 +63,13 @@ nav {
 
 .nav-item a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .nav-item.active {
 	font-weight: 600;
 	transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out;
-	color: black;
+	color: #5C4630;
 }
 
 @keyframes navbar_animation {
@@ -82,7 +82,7 @@ nav {
 }
 
 .joinUs {
-	background-color: #f8e4b6;
+	background-color: #ffffff;
 	max-width: none;
 	width: 120px;
 	height: 40px;
@@ -120,7 +120,7 @@ nav {
 .teamsNav {
 	display: flex;
 	position: relative;
-	color: #b82c85;
+	background-color: #F8E4B6;
 	width: 55%;
 	z-index: 100;
 }
@@ -128,7 +128,7 @@ nav {
 .teamsNavItems {
 	font-weight: 400;
 	transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out;
-	color: #b82c85;
+	color: #5C4630;
 }
 
 .teamsNavItems:hover {
@@ -138,7 +138,7 @@ nav {
 
 .teamsNavItems.active {
 	font-weight: 700;
-	color: #b82c85;
+	color: #5C4630;
 }
 
 .teamsBanners {
@@ -153,6 +153,24 @@ nav {
 	justify-content: center;
 	display: flex;
 	z-index: 20;
+	transition: background-image 0.5s ease-in-out;
+	position: relative;
+}
+
+.teamsAdditionalPhotos {
+	background-color: #F8E4B6;
+	background-size: cover;
+	background-position: center;
+	height: 35vh;
+	width: 80%;
+	border-radius: 25px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	z-index: 20;
+	transition: background-image 0.5s ease-in-out;
+	position: relative;
 }
 
 .members_Icons:hover {
@@ -197,14 +215,14 @@ footer {
 
 	h1 {
 		font-family: "Brasika", sans-serif;
-		color: #7583f1;
+		color: #5C4630;
 		font-size: 56px;
 		font-weight: bold;
 	}
 
 	h3 {
 		font-family: "Brasika", sans-serif;
-		color: #7583f1;
+		color: #5C4630;
 		font-size: 30px;
 		font-weight: bold;
 	}

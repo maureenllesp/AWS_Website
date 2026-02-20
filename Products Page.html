@@ -13,7 +13,7 @@
     <nav class="p-3 mt-4 navbar navbar-expand-md d-flex justify-content-between align-items-center main_Nav">
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <div class="logo">
-                <a href="mainPage.html"><img src="assets/" alt="Logo"></a>
+                <a href="mainPage.html"><img src="./assets/logo.svg" alt="Logo"></a>
             </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,67 +34,70 @@
         </div>
     </nav>
 
-    <!-- Header -->
-    <div class="container-fluid mt-3 d-flex align-items-center justify-content-center headerSection" style="z-index: -1;">
-        <div class="container-fluid headerBanner">
-            <h1>Lorem Ipsum</h1>
-            <br>
+    <!-- Game Header -->
+    <div class="container-fluid mt-5 p-4 d-flex align-items-stretch justify-content-center flex-row headerSection">
+        <div class="container-fluid p-2 w-50 gamePicture">
+        </div>
+        <div class="container-fluid ps-5 p-3 w-50 d-flex justify-content-center flex-column">
+            <h2>Game Title</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <br>
-            <button class="productsBtn">Lorem Ipsum</button>
+            <button class="p-2 justify-content-center productsBtn">Download Now</button>
         </div>
-        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#7583F0" fill-opacity="1" d="M0,64L34.3,96C68.6,128,137,192,206,218.7C274.3,245,343,235,411,192C480,149,549,75,617,74.7C685.7,75,754,149,823,154.7C891.4,160,960,96,1029,101.3C1097.1,107,1166,181,1234,197.3C1302.9,213,1371,171,1406,149.3L1440,128L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
-            <path fill="#B1C763" fill-opacity="1" d="M0,64L34.3,90.7C68.6,117,137,171,206,160C274.3,149,343,75,411,69.3C480,64,549,128,617,128C685.7,128,754,64,823,48C891.4,32,960,64,1029,106.7C1097.1,149,1166,203,1234,192C1302.9,181,1371,107,1406,69.3L1440,32L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
-            <path fill="#FECAEE" fill-opacity="1" d="M0,128L60,149.3C120,171,240,213,360,197.3C480,181,600,107,720,90.7C840,75,960,117,1080,122.7C1200,128,1320,96,1380,80L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
-            <defs>
-            <pattern id="img1" patternUnits="userSpaceOnUse" width="100" height="100">
-                <image href="assets/placeholderPhoto.jpg" x="0" y="0" width="100" height="100" />
-            </pattern>
-            </defs>
-        </svg>
     </div>
 
-    <!-- Product Spotlight -->
-    <div class="container-fluid mt-3 d-flex justify-content-center align-items-center">
-        <div class="container-fluid prodSpotlight">
-
-        </div>
-    </div>  
+    <h1 class="m-5 text-center">Products</h1>
 
     <!-- Product List -->
-    <div class="container-fluid mb-5 d-flex justify-content-center align-items-center">
-        <div class="row product">
-            <div class="col d-flex flex-column align-items-center">
-                <div class="rounded-circle prodImg">
-                </div>
+    <div class="container-fluid mb-5 gap-5 d-flex justify-content-center align-items-center">
+        <div class="card p-4 d-flex flex-column align-items-center">
+            <div class="rounded-circle prodImg">
+            </div>
                 <br>
-                <div class="text-center prodDesc">
-                    <h2>Item</h2>
-                    <hr class="mx-auto">
-                    <p>Description</p>
+            <div class="text-center prodDesc">
+                <h2>Item 1</h2>
+                <hr class="mx-auto">
+                <p>Description</p>
+            </div>
+        </div>
+        <div class="card p-4 d-flex flex-column align-items-center">
+            <div class="rounded-circle prodImg">
+            </div>
+                <br>
+            <div class="text-center prodDesc">
+                <h2>Item 2</h2>
+                <hr class="mx-auto">
+                <p>Description</p>
+            </div>
+        </div>
+        <div class="card p-4 d-flex flex-column align-items-center">
+            <div class="rounded-circle prodImg">
+            </div>
+                <br>
+            <div class="text-center prodDesc">
+                <h2>Item 3</h2>
+                <hr class="mx-auto">
+                <p>Description</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Highlight -->
+    <div class="container-fluid mb-5 p-4 d-flex align-items-center justify-content-center prodSection">
+        <div class="p-2 w-30 prodPicture">
+        </div>
+        <div class="container-fluid ps-5 p-2 w-70 d-flex justify-content-center flex-column">
+            <h2>Product Title</h2>
+            <div class="container-fluid d-flex align-items-center justify-content-center">
+                <div>
+                    <input type="number" min="1" max="5"></input>
+                </div>
+                <div class="container-fluid">
+                    <h2 class="text-end">₱300.00</h2>
                 </div>
             </div>
-            <div class="col d-flex flex-column align-items-center">
-                <div class="rounded-circle prodImg">
-                </div>
-                <br>
-                <div class="text-center prodDesc">
-                    <h2>Item</h2>
-                    <hr class="mx-auto">
-                    <p>Description</p>
-                </div>
-            </div>
-            <div class="col d-flex flex-column align-items-center">
-                <div class="rounded-circle prodImg">
-                </div>
-                <br>
-                <div class="text-center prodDesc">
-                    <h2>Item</h2>
-                    <hr class="mx-auto">
-                    <p>Description</p>
-                </div>
-            </div>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo pretium mauris, a tristique neque consequat non. Maecenas in ante rhoncus, venenatis urna eu, mattis nisi. Sed id enim non lorem fermentum posuere nec sit amet metus. Curabitur eget nibh in ante placerat commodo non quis mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc at vestibulum dui, quis cursus tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus id tortor sed lectus convallis hendrerit quis nec eros.</p>
         </div>
     </div>
 
