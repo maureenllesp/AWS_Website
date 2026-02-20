@@ -11,57 +11,73 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="Events Page.css" />
-		<link rel="stylesheet" href="nav bar.css">
+		<link rel="icon" href="assets/logo.svg">
 	</head>
 
 	<body>
 		<nav class="p-3 mt-4 navbar navbar-expand-lg d-flex justify-content-between align-items-center main_Nav">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
-            <div class="logo">
-                <a href="mainPage.html"><img src="assets/" alt="Logo"></a>
-            </div>
+			<div class="container-fluid d-flex justify-content-between align-items-center">
+				<div class="logo">
+					<a href="mainPage.html"><img src="assets/logo.svg" alt="Logo"></a>
+				</div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link" aria-current="page" href="About Us.html">About Us</a></li>
-              <li class="nav-item"><a class="nav-link" href="Teams Page.html">Teams</a></li>
-              <li class="nav-item"><a class="nav-link active" href="Events Page.html">Events</a></li> 
-              <li class="nav-item"><a class="nav-link" href="Products Page.html">Products</a></li>
-              <li class="nav-item joinUs justify-content-between align-items-center m-0 p-0"><a href="#">Join Us!</a></li>
-            </ul>
-          </div>
-        </div>
-    </nav>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse flex-grow-0 align-items-end" id="navbarNav">
+					<ul class="d-flex justify-content-between align-items-center m-0 p-0 navbar-nav nav-list">
+						<li class="nav-item"><a href="About Us.html">About Us</a></li>
+						<li class="nav-item"><a href="Teams Page.html">Teams</a></li>
+						<li class="nav-item active"><a href="Events Page.html">Events</a></li>
+						<li class="nav-item"><a href="Products Page.html">Products</a></li>
+						<li class="nav-item joinUs justify-content-between align-items-center pt-2 p-0 button">
+							Join Us!
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-
-		<div
-			class="container-fluid mt-3 d-flex align-items-center justify-content-center"
-			style="z-index: 20">
-			<div class="container-fluid eventsHeaderBanner"></div>
+		<div class="container-fluid mt-3 d-flex align-items-center justify-content-center eventsHeaderBanner" style="z-index: 20">
+			<center>
+				<h1>EVENT</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptates, 
+				</p>
+			</center>
 		</div>
 
-		<div class="container-lg mt-5">
-			<div class="row mb-5">
-				<div class="col-xl-3 col-md-0"></div>
-				<div class="col-xl-9 col-md-12 eventDisplay"></div>
+		<div class="container-fluid eventBodyStyle p-3">
+			<div>
+				<img src="assets/upper_wave.png" width="100%">
+				<div class="eventTitle d-flex flex-column justify-content-center align-items-center m-5">
+						<h1>EVENT</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptates, 
+						</p>
+				</div>
+				<img src="assets/lower_wave.png" width="100%">
 			</div>
-			<div class="row eventsBanners mb-5 flex-row-reverse">
-				<div class="col-xl-3 col-md-0"></div>
-				<div class="col-xl-9 col-md-12 eventDisplay"></div>
+			<div class="eventDesc d-flex justify-content-center align-items-center m-5">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptates, 
+				</p>
 			</div>
-			<div class="row eventsBanners mb-5">
-				<div class="col-xl-3 col-md-0"></div>
-				<div class="col-xl-9 col-md-12 eventDisplay"></div>
-			</div>
-			<div class="row eventsBanners mb-5 flex-row-reverse">
-				<div class="col-xl-3 col-md-0"></div>
-				<div class="col-xl-9 col-md-12 eventDisplay"></div>
+			<div class="mt-3 mb-3">
+				<img src="assets/upper_wave.png" width="100%">
+				<div class="eventTitle m-5">
+					<center>
+					<h1>EVENT</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptates, 
+					</p>
+					</center>
+				</div>
+				<img src="assets/lower_wave.png" width="100%">
 			</div>
 		</div>
+		
 
 		<footer>
 			<div class="container-fluid footer">

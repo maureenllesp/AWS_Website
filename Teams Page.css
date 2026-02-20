@@ -157,6 +157,22 @@ nav {
 	position: relative;
 }
 
+.teamsAdditionalPhotos {
+	background-color: #F8E4B6;
+	background-size: cover;
+	background-position: center;
+	height: 35vh;
+	width: 80%;
+	border-radius: 25px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	z-index: 20;
+	transition: background-image 0.5s ease-in-out;
+	position: relative;
+}
+
 .members_Icons:hover {
 	transform: translateY(-10px);
 	transition: all 0.3s ease-in-out;
