@@ -103,6 +103,15 @@ nav {
 
 /* body */
 
+svg {
+	width: 100%;
+}
+
+.container {
+	width: 100%;
+	height: 500px
+}
+
 .eventsHeaderBanner {
 	background-color: #E9DDF8;
 	background-size: cover;

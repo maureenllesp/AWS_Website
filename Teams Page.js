@@ -14,18 +14,18 @@ const teamData = {
         ['Joshua Tumamao', 'Chief Finance Officer', "url('assets/placeholderPhoto3.jpg')"]]
     },
     'Operations': {
-        banner: "url('assets/about-banner.jpg')",
+        banner: "url('assets/placeholderPhoto.jpg')",
         members: [['Bien Carlo Grafil', 'Chief Operations Officer', "url('assets/placeholderPhoto.jpg')"],
         ['Gabriel John Solomon', 'Vice-Chief Operations Officer', "url('assets/placeholderPhoto2.jpg')"],
         ['Gwen Lopez', 'Secretary of Operations Officer', "url('assets/placeholderPhoto3.jpg')"]]
     },
     'Marketing': {
-        banner: "url('assets/services-banner.jpg')",
+        banner: "url('assets/placeholderPhoto3.jpg')",
         members: [['Bianca Elaine Adame', 'Chief Marketing Officer', "url('assets/placeholderPhoto3.jpg')"],
         ['Watson Dongon', 'Vice-Chief Marketing Officer', "url('assets/placeholderPhoto.jpg')"],]
     },
     'Creatives': {
-        banner: "url('assets/contact-banner.jpg')",
+        banner: "url('assets/placeholderPhoto2.jpg')",
         members: [['Jahzeel Agustin', 'Chief Creatives Officer', "url('assets/placeholderPhoto.jpg')"],
         ['Alyssa Santillan', 'Vice-Chief Creatives Officer', "url('assets/placeholderPhoto2.jpg')"],
         ['Lorenzo Gloria', 'Committee', "url('assets/placeholderPhoto3.jpg')"],
@@ -34,12 +34,12 @@ const teamData = {
         ['Janessa Manuel', 'Committee', "url('assets/placeholderPhoto2.jpg')"]]
     },
     'Communications': {
-        banner: "url('assets/contact-banner.jpg')",
+        banner: "url('assets/placeholderPhoto.jpg')",
         members: [['Kyle Sy', 'Chief Communications Officer', "url('assets/placeholderPhoto2.jpg')"], 
         ['Nicole Lim', 'Committee', "url('assets/placeholderPhoto3.jpg')"]]
     },
     'Relations': {
-        banner: "url('assets/contact-banner.jpg')",
+        banner: "url('assets/placeholderPhoto3.jpg')",
         members: [['Dale Wilson Espirityo', 'Chief Relations Officer', "url('assets/placeholderPhoto.jpg')"],
         ['Chang Park', 'Vice-Chief Relations Officer', "url('assets/placeholderPhoto2.jpg')"],]
     },
