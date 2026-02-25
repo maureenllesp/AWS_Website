@@ -17,19 +17,23 @@ body {
 
 
 /* Navbar Container */
+/*
 .custom-navbar {
     border-radius: 50px;
     padding: 10px 20px;
     position: relative;
 }
-
+*/
 /* Logo */
+/*
 .logo {
     font-weight: bold;
     color: white;
 }
+*/
 
 /* Nav Links */
+/*
 .nav-link {
     color: white !important;
     font-weight: 500;
@@ -37,14 +41,18 @@ body {
     border-radius: 30px;
     transition: 0.3s ease;
 }
+*/
 
 /* Active pill effect */
+/*
 .nav-link.active {
     background: white;
     color: black !important;
 }
+*/
 
 /* Join Button */
+/*
 .join-btn {
     background: white;
     color: black !important;
@@ -52,6 +60,7 @@ body {
     padding: 8px 20px !important;
     font-weight: 600;
 }
+*/
 
 /* Hover effect */
 .nav-link:hover {

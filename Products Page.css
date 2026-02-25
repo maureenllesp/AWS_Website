@@ -11,7 +11,7 @@ body {
     padding: 0;
     scroll-behavior: smooth;
 }
-
+/*
 nav {
     top: 0;
     background-color: #ffffff;
@@ -27,7 +27,7 @@ nav {
     font-family:  sans-serif;
     z-index: 1000;
 }
-
+*/
 h1, h2{
     color: #9C2470;
     font-family: 'Brasika', sans-serif;
@@ -37,11 +37,11 @@ p{
     color: #9C2470;
 }
 
+/*
 .main_Nav {
     position: sticky;
     background-color: #9C2470;
 }
-
 .logo img {
     height: 40px;
 }
@@ -70,7 +70,7 @@ p{
     text-decoration: none;
     font-weight: bold;
 }
-
+*/
 .headerBanner {
     background-color: #FECAEE;
     background-size: cover;

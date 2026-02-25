@@ -30,7 +30,7 @@ body {
 		opacity: 1;
 	}
 }
-
+/*
 nav {
     background-color: #5C4630;
 	top: 25px;
@@ -71,7 +71,7 @@ nav {
 	transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out;
 	color: #5C4630;
 }
-
+*/
 @keyframes navbar_animation {
 	0% {
 		transform: translateY(0px);
@@ -80,7 +80,7 @@ nav {
 		transform: translateY(20px);
 	}
 }
-
+/*
 .joinUs {
 	background-color: #ffffff;
 	max-width: none;
@@ -100,7 +100,7 @@ nav {
 .navbar-toggler {
 	border: none;
 }
-
+*/
 /*body*/
 
 .teamsPhoto {
