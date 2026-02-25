@@ -6,7 +6,7 @@
   --nav-join-bg: white;
   --nav-join-text: #2F3A1F;
 
-  --nav-pill-offset: -16px;
+  --nav-pill-offset: -13px;
   --nav-pill-inner-height: 2.2em;
 }
 
@@ -15,7 +15,7 @@ nav{
     background-color: var(--nav-bg);
     color: var(--nav-text);
     min-height: 40px;
-    height: 70px  ;
+    height: 60px  ;
     margin-top: 1rem;
     margin: 0rem auto;   /* centers horizontally */
     width: 60%;          /* 👈 restricts length */
@@ -27,6 +27,12 @@ nav{
   top: 0;
   z-index: 1000;
 }
+
+.navbar-nav {
+  display: flex;
+  align-items: center; /* vertically centers all normal links */
+}
+
  /* Lock navbar height */
 .navbar {
   min-height: 40px; /* or whatever height you want */
@@ -50,7 +56,7 @@ nav .container-fluid {
 .navbar-nav .nav-link.active {
   color: var(--nav-text) !important;
   z-index: 1; /* keep text above pill */
-  bottom: -26px;     
+  transform: translateY(20px);;     
 }
 
 .navbar-nav .nav-link.active::before {
@@ -59,43 +65,37 @@ nav .container-fluid {
   left: 50%;
   transform: translateX(-50%);
   bottom: var(--nav-pill-offset);
-  width: calc(100% + 40px);
-  height: 60px;
-
+  width: 120px;      /* fixed width */
+  height: 60px;      /* fixed height */
+  
   background-color: var(--nav-pill);
-
+  
   -webkit-mask-image: url("assets/nav-pill.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
   -webkit-mask-position: center;
-
+  
   mask-image: url("assets/nav-pill.svg");
   mask-repeat: no-repeat;
   mask-size: contain;
   mask-position: center;
 
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
-
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* static shadow */
+  
   z-index: -1;
 }
 
-/* 2. The Blue Oblong (Fully rounded) */
 .navbar-nav .nav-link.active::after {
   content: "";
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  
-  /* Positioned to simulate a 10px border */
-  bottom: -2px; /* Adjusted to sit 10px above the white bottom (-12 + 10) */
+  bottom: -4px;
+
+  width: 90px;             
+  height: 38px;            
   background-color: var(--nav-pill-inner);
-  
-  /* Fully rounded corners */
-  border-radius: 50px; 
-  
-  /* Sized 20px smaller than the white background (10px each side) */
-  width: calc(100% + 10px); 
-  height: var(--nav-pill-inner-height);
+  border-radius: 50px;
   z-index: -1;
 }
 
@@ -141,16 +141,12 @@ nav .container-fluid {
   --nav-bg: #5C4630;
   --nav-pill-inner: #5C4630;
   --nav-join-text: #5C4630;
-  --nav-pill-offset: -17px;
-  --nav-pill-inner-height: 2em;
 }
 
 .theme-purple {
   --nav-bg: #5B2D91;
   --nav-pill-inner: #5B2D91;
   --nav-join-text: #5B2D91;
-  --nav-pill-offset: -17px;
-  --nav-pill-inner-height: 2em;
 }
 
 .theme-magenta {
