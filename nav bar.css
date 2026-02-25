@@ -1,4 +1,5 @@
 :root {
+  --pg-bg: #ebf6c7;
   --nav-bg: #2F3A1F;
   --nav-text: white;
   --nav-pill: white;
@@ -10,22 +11,35 @@
   --nav-pill-inner-height: 2.2em;
 }
 
+.nav-wrapper {
+    width: 100%;
+    padding-top: 1rem;  /* this gives "slightly below top" spacing */
+    background-color: transparent; /* so body background shows */
+}
+
 /* Navigation Bar */
 nav{
     background-color: var(--nav-bg);
     color: var(--nav-text);
     min-height: 40px;
     height: 60px  ;
-    margin-top: 1rem;
-    margin: 0rem auto;   /* centers horizontally */
+    margin: 0 auto;   /* centers horizontally */
     width: 60%;          /* 👈 restricts length */
     font-family: sans-serif;
     border-radius: 50px;
 }
+
 .main_Nav {
-	position: sticky;
-  top: 0;
-  z-index: 1000;
+    position: sticky;
+    top: 1rem;
+    z-index: 1000;
+    width: 60%;          /* your desired width */
+    margin: 0 auto;      /* center it horizontally */
+    padding: 0;          /* remove all padding */
+}
+
+.main_Nav .container-fluid {
+    padding: 0 !important;  /* override Bootstrap padding */
 }
 
 .navbar-nav {
@@ -150,7 +164,7 @@ nav .container-fluid {
 }
 
 .theme-magenta {
-  --nav-bg: #A82F2F;
-  --nav-pill-inner: #A82F2F;
-  --nav-join-text: #A82F2F;
+  --nav-bg: #9C2470;
+  --nav-pill-inner: #9C2470;
+  --nav-join-text: #9C2470;
 }
