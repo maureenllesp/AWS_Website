@@ -1,22 +1,42 @@
+:root {
+  --nav-bg: #2F3A1F;
+  --nav-text: white;
+  --nav-pill: white;
+  --nav-pill-inner: #2F3A1F;
+  --nav-join-bg: white;
+  --nav-join-text: #2F3A1F;
+}
+
 /* Navigation Bar */
 nav{
-    background-color: #2F3AA8;
-    color: white;
+    background-color: var(--nav-bg);
+    color: var(--nav-text);
+    min-height: 40px;
+    height: 70px  ;
     margin-top: 1rem;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0rem auto;   /* centers horizontally */
+    width: 60%;          /* 👈 restricts length */
+    font-family: sans-serif;
+    border-radius: 50px;
+}
+.main_Nav {
+	position: sticky;
+  top: 0;
+  z-index: 1000;
 }
  /* Lock navbar height */
 .navbar {
-  min-height: 70px; /* or whatever height you want */
+  min-height: 40px; /* or whatever height you want */
   align-items: center; /* keeps items vertically centered */
 }
-
+nav .container-fluid {
+  width: 100%;       /* match nav width */
+  margin: 0 auto;    /* center contents */
+}
 /* Base nav links */
 .navbar-nav .nav-link {
-  color: white !important;
-  font-weight: bold;
-  font-size: 1.1rem;
+  color: var(--nav-text) !important;
+  font-size: 1rem;
   margin: 0 10px;
   line-height: 1;
   position: relative; /* needed for pseudo-element positioning */
@@ -25,10 +45,9 @@ nav{
 
 /* Active nav link pill effect */
 .navbar-nav .nav-link.active {
-  color: white !important;
-  font-weight: bold;
+  color: var(--nav-text) !important;
   z-index: 1; /* keep text above pill */
-  bottom: -25px;     
+  bottom: -26px;     
 }
 
 .navbar-nav .nav-link.active::before {
@@ -36,14 +55,22 @@ nav{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -5px;
-  background-color: white; /* This acts as the border color */
-  
-  /* Top corners rounded, Bottom corners square */
-  border-radius: 35px 35px 0 0; 
-  
-  width: calc(100% + 30px);
-  height: 50px;
+  bottom: -14.5px;
+  width: 200px;
+  height: 60px;
+
+  background-color: var(--nav-pill);
+
+  -webkit-mask-image: url("assets/nav-pill.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center;
+
+  mask-image: url("assets/nav-pill.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+
   z-index: -1;
 }
 
@@ -56,7 +83,7 @@ nav{
   
   /* Positioned to simulate a 10px border */
   bottom: -2px; /* Adjusted to sit 10px above the white bottom (-12 + 10) */
-  background-color: #2F3AA8;
+  background-color: var(--nav-pill-inner);
   
   /* Fully rounded corners */
   border-radius: 50px; 
@@ -74,7 +101,7 @@ nav{
 }
 
 .joinUs {
-    background-color: white;
+    background-color: var(--nav-join-bg);
     width: 120px;
     height: 40px;
     display: flex;              
@@ -85,10 +112,46 @@ nav{
 }
 
 .joinUs a {
-    color: #2F3AA8;
+    color: var(--nav-join-text);
     text-decoration: none; 
     font-weight: bold;
     display: block; 
     width: 100%;
     text-align: center;
+}
+
+.theme-blue {
+  --nav-bg: #2F3AA8;
+  --nav-pill-inner: #2F3AA8;
+  --nav-join-text: #2F3AA8;
+}
+
+.theme-green {
+  --nav-bg: #2F3A1F;
+  --nav-pill-inner: #2F3A1F;
+  --nav-join-text: #2F3A1F;
+}
+
+.theme-brown {
+  --nav-bg: #5C4630;
+  --nav-pill-inner: #5C4630;
+  --nav-join-text: #5C4630;
+}
+
+.theme-magenta {
+  --nav-bg: #A82F2F;
+  --nav-pill-inner: #A82F2F;
+  --nav-join-text: #A82F2F;
+}
+
+.theme-magenta {
+  --nav-bg: #9C2470;
+  --nav-pill-inner: #9C2470;
+  --nav-join-text: #9C2470;
+}
+
+.theme-purple {
+  --nav-bg: #5B2D91;
+  --nav-pill-inner: #5B2D91;
+  --nav-join-text: #5B2D91;
 }

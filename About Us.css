@@ -7,7 +7,7 @@
 
  h1, h2, h3, h4, h5,h6 {
     font-family: 'Brasika', sans-serif;
-    color: #7583F1;
+    color: #2F3A1F;
     font-size: 48px;
     font-weight: bold;
 }
@@ -16,7 +16,7 @@ hr{
     width: 25%; 
     height: 4px; 
     border: none; 
-    border-top: 3px solid #7583F1; 
+    border-top: 3px solid #2F3A1F; 
     opacity: 1; margin: 4px 0 10px 0;
 }
 
